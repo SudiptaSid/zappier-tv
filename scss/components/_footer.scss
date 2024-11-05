@@ -1,0 +1,48 @@
+// ----- Footer
+footer {
+    padding:80px 0;
+    color:$grey2-clr;
+    // Max Width 767px
+    @media only screen and (max-width: $break_767) {
+        padding:50px 0;
+    }
+    .caller {
+        margin-bottom:50px;
+        // Max Width 767px
+        @media only screen and (max-width: $break_767) {
+            margin-bottom:20px;
+        }
+        a {
+            color:$grey2-clr;
+            &:hover {
+                text-decoration: underline;
+                color:$white-clr;
+            }
+        }
+    }
+    ul {
+        margin-bottom:50px;
+        // Max Width 767px
+        @media only screen and (max-width: $break_767) {
+            margin-bottom:20px;
+        }
+        li {
+            margin-bottom:10px;
+            &:last-child {
+                margin-bottom:0;
+            }
+            a {
+                display: inline-block;
+                color:$grey2-clr;
+                text-transform: capitalize;
+                &:hover {
+                    text-decoration: underline;
+                    color:$white-clr;
+                }
+            }
+        }
+    }
+    .copyright {
+        text-align: center;
+    }
+}

@@ -1,0 +1,40 @@
+// ----- Reset
+body {
+    font-family:$primary-ff;
+    font-size: $base-fz;
+    line-height:1.5;
+    font-weight:400;
+    color:$white-clr;
+    background-color:$black-clr;
+    overflow-x: hidden;
+    &.mobile-nav-active {
+        overflow: hidden;
+        &:after {
+            
+        }
+    }
+}
+ul,ol {
+    list-style-type:none;
+    padding-left:0px;
+    margin-bottom:0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight:500;
+    margin-bottom:15px;
+    line-height:1.2;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+// ----- Side padding
+.padding-side {
+    padding:0 50px;
+    // Max Width 991px
+    @media only screen and (max-width: $break_991) {
+        padding:0;
+    }
+}

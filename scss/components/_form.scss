@@ -1,0 +1,32 @@
+// ----- Form
+.form-control {
+    font-size:14px;
+    line-height:20px;
+    padding:10px 20px;
+    border:none;
+    border-radius:0;
+    color:$black-light-clr;
+    outline:none;
+    box-shadow:none;
+    text-shadow:none;
+    background-clip: border-box;
+    position: relative;
+    // Max Width 767px
+    @media only screen and (max-width: $break_767) {
+        padding:8px 20px;
+    }
+    &:focus {
+        border:none;
+        outline:none;
+        box-shadow:none;
+        text-shadow:none;
+    }
+    &::placeholder {
+        color:$grey2-clr;
+    }
+}
+
+// ----- Input Label
+label {
+    margin-bottom:5px;
+}
